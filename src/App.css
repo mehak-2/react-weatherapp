@@ -1,0 +1,83 @@
+/* App.css */
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.search-container {
+  margin-top: 40px;
+  align-items: center;
+  margin-left: 125px;
+  margin-right: 50px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.weather-container {
+  margin: 20px;
+  padding: 50px;
+  margin-left: 160px;
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.weather-temp {
+  font-size: 50px;
+}
+
+.location {
+  font-size: 25px;
+}
+
+.weather-details {
+  margin: 20px;
+  padding: 20px;
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  max-width: 60px;
+  max-height: 80px;
+  margin-right: 10px;
+}
+
+.humidity, .wind {
+  font-weight: bold;
+}
+
+.text {
+  font-size: 20px;
+}
+
+.app-container {
+  width: 500px;
+  height: 600px;
+  align-items: center;
+  margin-left: 500px;
+  margin-right: 1000px;
+  background-color: lightblue;
+  padding: 10px;
+  margin-top: 10px;
+}
