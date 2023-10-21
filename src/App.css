@@ -19,8 +19,8 @@ input[type="text"] {
 
 button {
   padding: 10px 20px;
-  background-color: black;
-  color: #fff;
+  background-color: lightblue;
+  color: black;
   border: none;
   cursor: pointer;
 }
@@ -40,10 +40,12 @@ button {
 
 .weather-temp {
   font-size: 50px;
+  color: white;
 }
 
 .location {
   font-size: 25px;
+  color: white;
 }
 
 .weather-details {
@@ -71,13 +73,10 @@ img {
   font-size: 20px;
 }
 
-.app-container {
-  width: 500px;
-  height: 600px;
-  align-items: center;
-  margin-left: 500px;
-  margin-right: 1000px;
-  background-color: lightblue;
-  padding: 10px;
-  margin-top: 10px;
+.container{
+  box-shadow: 10px 10px lightgray;
+ 
 }
+input:active{outline:none;}
+
+

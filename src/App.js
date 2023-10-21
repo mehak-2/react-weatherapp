@@ -6,6 +6,7 @@ import rain_icon from "./Assets/rain.png";
 import snow_icon from "./Assets/snow.png";
 import humidity_icon from "./Assets/humidity_icon.png"
 import wind_icon from "./Assets/wind_icon.png";
+import back from "./Assets/back.jpg";
 
 
 
@@ -70,8 +71,9 @@ function App() {
   };
 
   return (
-    
-    <div className="app-container">
+<div className="container" style={{ width: '550px', margin: '0 auto'}}>
+<div className="upper-bac" style={{ background: `url(${back})`, padding: '20px', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+    <div className="app-container" style={{ alignContent: 'center'}}>
       <div className="search-container">
         <input 
           type="text"
@@ -82,27 +84,32 @@ function App() {
       </div>
 
       <div className="weather-container">
-      <img src={wicon} alt="Weather Icon" />
+        <img src={wicon} alt="Weather Icon" />
         <div className="weather-temp">{weatherData.temperature}</div>
         <div className="location">{weatherData.location}</div>
       </div>
-    
-      <div className="weather-details">
-        <div className="data">
-          <div>
-            <img src={humidity_icon} alt="Humidity Icon" />
-            <div className='text'>Humidity</div>
-            <div className="humidity">{weatherData.humidity}</div>
-          </div>
-          <div>
-            <img src={wind_icon} alt="Wind Icon" />
-            <div className='text'>Wind Speed</div>
-            <div className="wind">{weatherData.wind}</div>
-          </div>
+    </div>
+  </div>
+
+  <div className='lower-bac' style={{ backgroundColor: 'white', padding: '20px' }}>
+    <div className="weather-details">
+      <div className="data">
+        <div>
+          <img src={humidity_icon} alt="Humidity Icon" />
+          <div className='text'>Humidity</div>
+          <div className="humidity">{weatherData.humidity}</div>
+        </div>
+        <div>
+          <img src={wind_icon} alt="Wind Icon" />
+          <div className='text'>Wind Speed</div>
+          <div className="wind">{weatherData.wind}</div>
         </div>
       </div>
     </div>
-   
+  </div>
+</div>
+
+
   );
 }
 
